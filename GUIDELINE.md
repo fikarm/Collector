@@ -1,4 +1,16 @@
-# Struktur Folder
+# GUIDELINE
+
+## 1. Instalasi
+
+```
+npm install
+```
+
+## 2. Disarankan
+
+- install vscode extension ```dsznajder.es7-react-js-snippets```
+
+## 3. Struktur Folder
 
 ### Group by Feature
 
@@ -59,3 +71,7 @@ scripts
   images.js
   clear.js
 ```
+
+## 4. Penulisan Komponen
+
+Penulisan komponen diseragamkan menggunakan ```function``` dan menggunkan ekstensi file ```.js```.

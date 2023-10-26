@@ -1,11 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet } from 'react-native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+import Scan from '../scan/Scan'
+import LandingScreen from './landing/LandingScreen'
+
+const Tab = createBottomTabNavigator()
 
 const MainNavigator = () => {
     return (
-        <View>
-            <Text>MainNavigator</Text>
-        </View>
+        <NavigationContainer>
+            <Tab.Navigator>
+                <Tab.Screen name="Home" component={LandingScreen} />
+                <Tab.Screen name="Scan" component={Scan} />
+            </Tab.Navigator>
+        </NavigationContainer>
     )
 }
 
